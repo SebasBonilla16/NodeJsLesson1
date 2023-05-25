@@ -45,3 +45,9 @@ if(req.url === "/api"){
         res.end();
     });
 }
+
+// Here we are telling our server to be hosted on port 4000 in our local host
+server.listen(port, (err) =>{
+    if(err) console.log("ERROR", err.message);
+    console.log(`Listening on port ${port}`)
+});
