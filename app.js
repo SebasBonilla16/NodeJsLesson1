@@ -31,7 +31,6 @@ const server = http.createServer((req,res) => {
             res.end()
         });
     }
-});
 
 
 // Here we will do the same process with cat2
@@ -45,7 +44,7 @@ if(req.url === "/api"){
         res.end();
     });
 }
-
+});
 // Here we are telling our server to be hosted on port 4000 in our local host
 server.listen(port, (err) =>{
     if(err) console.log("ERROR", err.message);
